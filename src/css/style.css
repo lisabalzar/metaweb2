@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Minecrafter';
+    src: url(../../resources/fonts/minecrafter/Minecrafter.Reg.ttf);
+}
+
+h1, h2{
+    font-family: 'Minecrafter';
+    color: white;
+    text-align: center;
+}
+
+h1{font-size: 45px;}
+
+h2{font-size: 20px;}
+
+ul{color: white;}
+
+.sidebar{
+    background-color: black;
+}
+
+.container{
+    background-color: black;
+}
