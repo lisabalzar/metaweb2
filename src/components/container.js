@@ -24,16 +24,30 @@ class Container extends React.Component {
             id: 3,
             name: "Username3",
             online: false
-          }
+          },
+          {
+            id: 4,
+            name: "Username3",
+            online: false
+          },
+          {
+            id: 5,
+            name: "Username3",
+            online: false
+          },
+          {
+            id: 6,
+            name: "Username3",
+            online: false
+          },
         ]
        };
     handleChange = () => {console.log("clicked");};
     render() {
         return (
         <div className="container">
-            <h1>METAweb</h1>
             <ul>
-                <Sidebar className="sidebar" players={this.state.players} handleChangeProps={this.handleChange} />
+                <Sidebar players={this.state.players} handleChangeProps={this.handleChange} />
             </ul>
         </div>
         )

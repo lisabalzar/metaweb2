@@ -1,5 +1,6 @@
 import React from "react"
 import Players from "./players.js"
+import playerhead from './head.png'
 /**
  * The sidebar rendering players online and player stats.
  */
@@ -7,14 +8,31 @@ import Players from "./players.js"
  class Sidebar extends React.Component {
     render() {
         return (
+          <div className="sidebar-comp">
+            <h2 className="h2-sidebar">METAcraft server</h2>
+            <div className="hr-sidebar"></div>
+
+            <div className="head-group">
+                <img className="img-head" src={playerhead}></img>
+                <h2 className="h2-players">Players</h2>
+                <p className="p-players">2 players online</p>
+              </div>
+
+          <div className="player-list-container">
+            
           <ul>
             {this.props.players.map(player => (
-                <li key={player.id}> 
-                <input type="checkbox" checked={this.props.players.online} onChange={() => console.log("clicked")}/>
-                  {player.name}
+                <li className="player-container" key={player.id}> 
+                <div checked={this.props.players.online} onChange={() => console.log("clicked")}/>
+                  <div className="player-name">{player.name} {player.online === true ? "online" : "not online"}</div>
+                  
                 </li>
             ))}
           </ul>
+        </div>
+        <div className="hr-sidebar"></div>
+
+          </div>
         )
       }
  }
