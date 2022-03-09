@@ -1,6 +1,8 @@
-import React from "react"
-import Players from "./players.js"
-import playerhead from './head.png'
+import React from "react";
+import Players from "./players.js";
+import playerhead from './head.png';
+import Chart from './chart';
+
 /**
  * The sidebar rendering players online and player stats.
  */
@@ -31,6 +33,10 @@ import playerhead from './head.png'
           </ul>
         </div>
         <div className="hr-sidebar"></div>
+        <div>
+          <Chart/>
+        </div>
+        
 
           </div>
         )
