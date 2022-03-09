@@ -1,0 +1,8 @@
+{
+    "mcServerRequestInterval": 60000,
+    "mcServerIP": "66.59.209.192",
+    "mcServerPORT": 25565,
+    "PortServer": 3001,
+    "LocalIP": "localhost"
+  }
+  
