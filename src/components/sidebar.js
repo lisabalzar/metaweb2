@@ -44,10 +44,9 @@ function Sidebar({player}) {
           <Chart/>
         </div>
         
-
           </div>
         )
       
  }
 
- export default Sidebar
+export default Sidebar
